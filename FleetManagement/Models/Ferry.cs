@@ -1,16 +1,24 @@
-﻿namespace DotNet6Console.Models;
+﻿using System.Xml.Linq;
+
+namespace DotNet6Console.Models;
 
 
 internal class Ferry : Vessel
 {
-    public Ferry(string name, uint year) : base(name, year)
+    public int passengers;
+    public Ferry(string name, uint year, int passengers) : base(name, year)
     {
-
+        this.passengers = passengers;
     }
 
-    public Ferry(string name, string year) : base(name, year)
+    public Ferry(string name, string year,int passengers) : base(name, year)
     {
+        this.passengers = passengers;
+    }
 
+    public override string GetVesselInfo()
+    {
+        return $"--------------\nType: Ferry\nName: {name}\nYear Built: {yearBuilt}\nPassengers: {passengers}\n--------------\n";
     }
 }
 

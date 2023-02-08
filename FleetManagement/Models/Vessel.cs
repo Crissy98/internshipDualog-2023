@@ -3,13 +3,13 @@ using System.Text.RegularExpressions;
 
 namespace DotNet6Console.Models;
 
-//Vessell class should be abstract because we don't want to create a vessell , we want to create multiple types of vessells
-public class Vessel
+//Vessel class should be abstract because we don't want to create a vessel , we want to create multiple types of vessels
+abstract class Vessel
 
 {
-    private string name;
+    protected string name;
 
-    private uint yearBuilt;
+    protected uint yearBuilt;
 
     public string Name
     {
@@ -20,7 +20,7 @@ public class Vessel
     public uint YearBuilt
     {
         get { return yearBuilt; }
-        set { SetYearBuilt(value); }
+        protected set { SetYearBuilt(value); }
     }
 
 
@@ -59,7 +59,7 @@ public class Vessel
                 SetYearBuilt(year);
             }
             else
-                throw new ArgumentException("The year when the vessel was built is not in the corect format.");
+                throw new ArgumentException("The year when the vessel was built is not in the correct format.");
 
         }
         else
@@ -84,7 +84,10 @@ public class Vessel
         this.yearBuilt = yearOfBuilt;
     }
 
-
+    public virtual string GetVesselInfo()
+    {
+        return $"Type: Vessel\nName: {name}\nYear Built: {yearBuilt}";
+    }
 }
 
 

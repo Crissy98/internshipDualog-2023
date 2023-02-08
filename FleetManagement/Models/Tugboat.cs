@@ -3,13 +3,19 @@
 
 internal class Tugboat : Vessel
 {
-    public Tugboat(string name, uint year) : base(name, year)
+    private uint maxForce;
+    public Tugboat(string name, uint year, uint maxForce) : base(name, year)
     {
-
+        this.maxForce = maxForce;
     }
 
-    public Tugboat(string name, string year) : base(name, year)
+    public Tugboat(string name, string year,uint maxForce) : base(name, year)
     {
+        this.maxForce = maxForce;
+    }
 
+    public override string GetVesselInfo()
+    {
+        return $"--------------\nType: Tugboat\nName: {name}\nYear Built: {yearBuilt}\nMax Force: {maxForce}\n--------------\n";
     }
 }
