@@ -49,29 +49,39 @@ public class Vessel
     }
 
 
-    public void SetYearBuilt(string yearBuilt)
+    public void SetYearBuilt(string yearOfBuilt)
     {
-        if (string.IsNullOrWhiteSpace(yearBuilt))
+        if (!string.IsNullOrWhiteSpace(yearOfBuilt))
         {
-            uint year = uint.Parse(yearBuilt);
-            this.SetYearBuilt(year);
+            if (Regex.IsMatch(yearOfBuilt, "^(20)[0-9][0-9]"))
+            {
+                uint year = uint.Parse(yearOfBuilt);
+                SetYearBuilt(year);
+            }
+            else
+                throw new ArgumentException("The year when the vessel was built is not in the corect format.");
+
         }
+        else
+
+            throw new ArgumentException("Please make sure that the year of built is not null.");
+
     }
 
     //check if the ship is too old
-    public void SetYearBuilt(uint yearBuilt)
+    public void SetYearBuilt(uint yearOfBuilt)
     {
         //check if the ship is older than 20 years 
-        if (yearBuilt < DateTime.Now.Year - 20)
+        if (yearOfBuilt < DateTime.Now.Year - 20)
         {
-            throw new ArgumentOutOfRangeException();
+            throw new OldShipException();
         }
-        else if (yearBuilt >= DateTime.Now.Year)
+        else if (yearOfBuilt >= DateTime.Now.Year)
         {
-            throw new ArgumentOutOfRangeException($"I'm pretty sure we are in {DateTime.Now.Year}. The vessel cannot be created in the future! :)");
+            throw new OldShipException($"I'm pretty sure we are in {DateTime.Now.Year}. The vessel could not be created in the future! :)");
         }
 
-        this.yearBuilt = yearBuilt;
+        this.yearBuilt = yearOfBuilt;
     }
 
 

@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FleetManagement"
+    "\\FleetManagement",
+    "\\FleetManagement\\Models"
   ],
   "SelectedNode": "\\FleetManagement",
   "PreviewInSolutionExplorer": false
