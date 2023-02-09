@@ -11,6 +11,8 @@ abstract class Vessel
 
     protected uint yearBuilt;
 
+    protected Speed speed;
+
     public string Name
     {
         get { return name; }
@@ -24,16 +26,18 @@ abstract class Vessel
     }
 
 
-    public Vessel(string name, uint year)
+    public Vessel(string name, uint year,Speed speed)
     {
         SetName(name);
         SetYearBuilt(year);
+        SetSpeed(speed);
     }
 
-    public Vessel(string name, string year)
+    public Vessel(string name, string year,Speed speed)
     {
         SetName(name);
         SetYearBuilt(year);
+        SetSpeed(speed);
     }
 
 
@@ -48,6 +52,10 @@ abstract class Vessel
         this.name = shipName;
     }
 
+    public void SetSpeed(Speed speed)
+    {
+        this.speed= speed;
+    }
 
     public void SetYearBuilt(string yearOfBuilt)
     {
@@ -60,7 +68,6 @@ abstract class Vessel
             }
             else
                 throw new ArgumentException("The year when the vessel was built is not in the correct format.");
-
         }
         else
 
@@ -84,9 +91,14 @@ abstract class Vessel
         this.yearBuilt = yearOfBuilt;
     }
 
-    public virtual string GetVesselInfo()
+    public string GetVesselInfo()
     {
-        return $"Type: Vessel\nName: {name}\nYear Built: {yearBuilt}";
+        return $"--------------\nType: {this.GetType().Name}\nName: {name}\nYear Built: {yearBuilt}\nSpeed: {speed.ToString("", null)}\nSpeed (m/s): {speed.ToString("MS",null)}";
+    }
+
+    public override string ToString()
+    {
+        return GetVesselInfo();
     }
 }
 
