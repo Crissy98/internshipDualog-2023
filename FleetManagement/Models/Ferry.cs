@@ -16,18 +16,11 @@ internal class Ferry : Vessel
         this.passengers = passengers;
     }
 
-    /*public string GetVesselInfo()
-    {
-        return $"--------------\nType: Ferry\nName: {name}\nYear Built: {yearBuilt}\nSpeed: {speed}\nPassengers: {passengers}\n--------------\n";
-    }*/
 
     public override string ToString()
     {
         return $"{GetVesselInfo()}\nPassengers: {passengers}\n--------------\n";
     }
-
-
-
 
 }
 

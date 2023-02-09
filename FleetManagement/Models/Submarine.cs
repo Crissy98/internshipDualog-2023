@@ -14,14 +14,9 @@ internal class Submarine : Vessel
         this.maxDepth = maxDepth;
     }
 
-    /*public override string GetVesselInfo()
-    {
-        return $"--------------\nType: Submarine\nName: {name}\nYear Built: {yearBuilt}\nSpeed: {speed}\n Max Force: {maxDepth}\n--------------\n";
-    }*/
-
     public override string ToString()
     {
-        return $"{GetVesselInfo()}\nMax Force: {maxDepth}\n{speed}\n--------------\n";
+        return $"{GetVesselInfo()}\nMax Depth: {maxDepth}\n";
     }
 }
 

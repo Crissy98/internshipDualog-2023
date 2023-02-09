@@ -14,10 +14,6 @@ internal class Tugboat : Vessel
         this.maxForce = maxForce;
     }
 
-    /*public override string GetVesselInfo()
-    {
-        return $"--------------\nType: Tugboat\nName: {name}\nYear Built: {yearBuilt}\nSpeed: {speed}\nMax Force: {maxForce}\n--------------\n";
-    }*/
     public override string ToString()
     {
         return $"{GetVesselInfo()}\nMax Force: {maxForce}\n--------------\n";

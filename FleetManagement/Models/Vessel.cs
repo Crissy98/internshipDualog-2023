@@ -93,7 +93,7 @@ abstract class Vessel
 
     public string GetVesselInfo()
     {
-        return $"--------------\nType: {this.GetType().Name}\nName: {name}\nYear Built: {yearBuilt}\nSpeed: {speed.ToString("", null)}\nSpeed (m/s): {speed.ToString("MS",null)}";
+        return $"--------------\nType: {this.GetType().Name}\nName: {name}\nYear Built: {yearBuilt}\n{speed.ToString()}\n{speed.ToString("MS")}";
     }
 
     public override string ToString()
