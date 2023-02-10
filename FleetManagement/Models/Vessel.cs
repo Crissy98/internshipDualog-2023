@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 namespace DotNet6Console.Models;
 
 //Vessel class should be abstract because we don't want to create a vessel , we want to create multiple types of vessels
-abstract class Vessel
+public abstract class Vessel
 
 {
     protected string name;

@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Crissy\\source\\repos\\internshipDualog-2023\\FleetManagement.Tests\\FleetManagement.Tests.csproj": {}
+    "C:\\Users\\mihailac\\Source\\Repos\\internshipDualog-2023\\FleetManagement.Tests\\FleetManagement.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Crissy\\source\\repos\\internshipDualog-2023\\FleetManagement.Tests\\FleetManagement.Tests.csproj": {
+    "C:\\Users\\mihailac\\Source\\Repos\\internshipDualog-2023\\FleetManagement.Tests\\FleetManagement.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Crissy\\source\\repos\\internshipDualog-2023\\FleetManagement.Tests\\FleetManagement.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\mihailac\\Source\\Repos\\internshipDualog-2023\\FleetManagement.Tests\\FleetManagement.Tests.csproj",
         "projectName": "FleetManagement.Tests",
-        "projectPath": "C:\\Users\\Crissy\\source\\repos\\internshipDualog-2023\\FleetManagement.Tests\\FleetManagement.Tests.csproj",
-        "packagesPath": "C:\\Users\\Crissy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Crissy\\source\\repos\\internshipDualog-2023\\FleetManagement.Tests\\obj\\",
+        "projectPath": "C:\\Users\\mihailac\\Source\\Repos\\internshipDualog-2023\\FleetManagement.Tests\\FleetManagement.Tests.csproj",
+        "packagesPath": "C:\\Users\\mihailac\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mihailac\\Source\\Repos\\internshipDualog-2023\\FleetManagement.Tests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Crissy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mihailac\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Crissy\\source\\repos\\internshipDualog-2023\\FleetManagement\\FleetManagement.csproj": {
-                "projectPath": "C:\\Users\\Crissy\\source\\repos\\internshipDualog-2023\\FleetManagement\\FleetManagement.csproj"
+              "C:\\Users\\mihailac\\Source\\Repos\\internshipDualog-2023\\FleetManagement\\FleetManagement.csproj": {
+                "projectPath": "C:\\Users\\mihailac\\Source\\Repos\\internshipDualog-2023\\FleetManagement\\FleetManagement.csproj"
               }
             }
           }
@@ -55,7 +52,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.2, )"
+              "version": "[3.2.0, )"
             },
             "xunit": {
               "target": "Package",
@@ -65,7 +62,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.4.3, )"
+              "version": "[2.4.5, )"
             }
           },
           "imports": [
@@ -88,20 +85,17 @@
         }
       }
     },
-    "C:\\Users\\Crissy\\source\\repos\\internshipDualog-2023\\FleetManagement\\FleetManagement.csproj": {
+    "C:\\Users\\mihailac\\Source\\Repos\\internshipDualog-2023\\FleetManagement\\FleetManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Crissy\\source\\repos\\internshipDualog-2023\\FleetManagement\\FleetManagement.csproj",
+        "projectUniqueName": "C:\\Users\\mihailac\\Source\\Repos\\internshipDualog-2023\\FleetManagement\\FleetManagement.csproj",
         "projectName": "FleetManagement",
-        "projectPath": "C:\\Users\\Crissy\\source\\repos\\internshipDualog-2023\\FleetManagement\\FleetManagement.csproj",
-        "packagesPath": "C:\\Users\\Crissy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Crissy\\source\\repos\\internshipDualog-2023\\FleetManagement\\obj\\",
+        "projectPath": "C:\\Users\\mihailac\\Source\\Repos\\internshipDualog-2023\\FleetManagement\\FleetManagement.csproj",
+        "packagesPath": "C:\\Users\\mihailac\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mihailac\\Source\\Repos\\internshipDualog-2023\\FleetManagement\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Crissy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mihailac\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

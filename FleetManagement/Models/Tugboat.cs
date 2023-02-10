@@ -1,7 +1,7 @@
 ﻿namespace DotNet6Console.Models;
 
 
-internal class Tugboat : Vessel
+public class Tugboat : Vessel
 {
     private uint maxForce;
     public Tugboat(string name, uint year, uint maxForce, Speed speed) : base(name, year, speed)

@@ -1,7 +1,7 @@
 ﻿namespace DotNet6Console.Models;
 
 
-internal class Submarine : Vessel
+public class Submarine : Vessel
 {
     private int maxDepth;
     public Submarine(string name, uint year, int maxDepth, Speed speed) : base(name, year, speed)

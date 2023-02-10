@@ -1,7 +1,7 @@
 ﻿namespace DotNet6Console.Models;
 
 
-internal class OldShipException : Exception
+public class OldShipException : Exception
 {
     public OldShipException(string? message) : base(message)
     {

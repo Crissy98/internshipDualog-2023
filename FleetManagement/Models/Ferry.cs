@@ -3,7 +3,7 @@
 namespace DotNet6Console.Models;
 
 
-internal class Ferry : Vessel
+ public class Ferry : Vessel
 {
     public int passengers;
     public Ferry(string name, uint year, int passengers,Speed speed) : base(name, year, speed)
